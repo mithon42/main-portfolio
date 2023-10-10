@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "../layouts/Title";
-import ProjectCard from "./projectCard";
+import ProjectsCard from "./ProjectsCard";
+import { projectOne, projectThree, projectTwo } from "../../assets";
 
 function Projects() {
   return (
@@ -16,12 +17,32 @@ function Projects() {
       </div>
 
       <div className="grid grid-cols-3 gap-14">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        <ProjectsCard
+          title="social media clone"
+          imgSrc={projectOne}
+          alt="image-1"
+        />
+        <ProjectsCard
+          title="e-commerce website"
+          imgSrc={projectTwo}
+          alt="image-2"
+        />
+        <ProjectsCard
+          title="chating apps"
+          imgSrc={projectThree}
+          alt="image-3"
+        />
+        <ProjectsCard
+          title="portfolio website"
+          imgSrc={projectTwo}
+          alt="image-4"
+        />
+        <ProjectsCard
+          title="e-commerce website"
+          imgSrc={projectThree}
+          alt="image-5"
+        />
+        <ProjectsCard title="chating apps" imgSrc={projectOne} alt="image-6" />
       </div>
     </section>
   );
