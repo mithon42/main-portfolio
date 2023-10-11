@@ -1,9 +1,10 @@
 import React from "react";
+import { motion } from "framer-motion";
 import ResumeCard from "./ResumeCard";
 
 function Education() {
   return (
-    <div className="flex gap-20">
+    <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: .5}}} className="flex gap-20">
       <div>
         <div className="flex flex-col gap-3 py-12 font-titleFont">
           <p className="text-sm text-designColor tracking-[4px]">1998 - 2010</p>
@@ -33,6 +34,7 @@ function Education() {
         </div>
       </div>
 
+      {/* Job Experience */}
       <div>
         <div className="flex flex-col gap-3 py-12 font-titleFont">
           <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
@@ -61,7 +63,7 @@ function Education() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
