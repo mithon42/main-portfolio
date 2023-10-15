@@ -1,5 +1,7 @@
 import React from "react";
 import Title from "../layouts/Title";
+import ContactLeft from "./ContactLeft";
+import ContactRight from "./ContactRight";
 
 function Contact() {
   return (
@@ -9,6 +11,12 @@ function Contact() {
     >
       <div className="flex justify-center items-center text-center">
         <Title title="CONTACT" subTitle="Contact With Me" />
+      </div>
+
+      <div className="w-full flex justify-between">
+        <ContactLeft />
+
+        <ContactRight />
       </div>
     </section>
   );
