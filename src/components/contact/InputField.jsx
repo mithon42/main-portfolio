@@ -5,6 +5,8 @@ export default function InputField(props) {
     <div className="w-full flex flex-col gap-[1px]">
       <label htmlFor={props.name} className="w-max text-md text-gray-400">{props.label}</label>
       <input
+        onChange={props.onChange}
+        value={props.value}
         type={props.type}
         id={props.name}
         placeholder={props.placeholder}
